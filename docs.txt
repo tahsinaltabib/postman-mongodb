@@ -5,17 +5,4 @@ R- Read
 U- Update
 D- Delete
 
-mongodb+srv://tabib21:<db_password>@tabib.xi288nm.mongodb.net/?appName=Tabib
-
-
-
--------------------------------------------------------------------------------------
-
-User@Tabib MINGW64 /d/Node Js/postman&mongodb (main)
-$ node index.js
-Server is running
-D:\Node Js\postman&mongodb\node_modules\mongoose\lib\connection.js:1180
-    err = new ServerSelectionError();
-          ^
-
-MongooseServerSelectionError: D42C0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:openssl\ssl\record\rec_layer_s3.c:916:SSL alert number 80
+mongodb+srv://Tabib:<db_password>@tabib21.u6dnqxm.mongodb.net/?appName=tabib21
