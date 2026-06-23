@@ -1,3 +1,4 @@
+require('dotenv').config()
 require('node:dns').setServers(['1.1.1.1'],['8.8.8.8'])
 const express = require('express')
 const secureMiddleWare = require('./middlewares/secureMiddleware')
@@ -6,7 +7,7 @@ const app = express()
 const mongoose = require('mongoose')
 
 
-mongoose.connect('mongodb+srv://Tabib:inception2010@tabib21.u6dnqxm.mongodb.net/todo?appName=tabib21').then(()=>{
+mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log("Database Connected");
 })
 
