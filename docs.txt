@@ -4,5 +4,3 @@ C- Create
 R- Read
 U- Update
 D- Delete
-
-mongodb+srv://Tabib:<db_password>@tabib21.u6dnqxm.mongodb.net/?appName=tabib21
