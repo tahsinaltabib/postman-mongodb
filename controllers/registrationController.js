@@ -25,12 +25,20 @@ const allUserController= async (req,res)=>{
     res.send(data)
 }
 
-const deleteUser = async(req,res)=>{
-    const{id} = req.parems
+const deleteUser = async (req,res)=>{
+    const{id} = req.body
 
     await User.findByIdAndDelete(id)
 
     res.send("User deleted")
 }
 
-module.exports = {registrationController, allUserController}
+const updateUser = async (req,res)=>{
+    const {id} = req.params
+
+    let data = await User.findByIdAndUpdate({_id:id},req.body)
+
+    res.send("Data updated")
+}
+
+module.exports = {registrationController, allUserController,deleteUser, updateUser}
